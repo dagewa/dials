@@ -1,5 +1,6 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 from dials.array_family import flex
 from libtbx.phil import parse
 

@@ -10,6 +10,7 @@
 #  included in the root directory of this package.
 
 from __future__ import absolute_import, division, print_function
+from builtins import object
 import sys
 
 import dials.util.banner  # noqa: F401 - Importing means that it prints

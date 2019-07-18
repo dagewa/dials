@@ -10,6 +10,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import object
 def generate_phil_scope():
     """
     Generate the phil scope for profile model

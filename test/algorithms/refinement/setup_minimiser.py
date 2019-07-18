@@ -13,6 +13,7 @@
 
 # Python and cctbx imports
 from __future__ import absolute_import, division, print_function
+from builtins import object
 from libtbx.phil import parse, command_line
 
 # Import the refinement engine

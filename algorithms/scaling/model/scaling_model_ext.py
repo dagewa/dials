@@ -5,6 +5,7 @@ Definitions of scaling model extensions.
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import object
 class ScalingModelIface(object):
     """
     The interface definition for a scaling model.

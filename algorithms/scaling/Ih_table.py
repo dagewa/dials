@@ -6,6 +6,7 @@ symmetry equivalent reflections, as required for scaling.
 """
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 from orderedset import OrderedSet
 from dials.array_family import flex
 from cctbx import miller, crystal, uctbx

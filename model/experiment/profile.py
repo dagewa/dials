@@ -11,6 +11,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import object
 class ProfileModelExt(object):
     """
     The definition for a profile model.

@@ -2,6 +2,7 @@
 between two vectors with respect to each element of the vectors"""
 
 from __future__ import absolute_import, division, print_function
+from builtins import object
 from scitbx import matrix
 from random import uniform
 import math

@@ -13,6 +13,7 @@ from __future__ import absolute_import, division, print_function
 # LIBTBX_SET_DISPATCHER_NAME dev.dials.show_extensions
 
 
+from builtins import object
 class Script(object):
     """ The class to encapsulate the script. """
 

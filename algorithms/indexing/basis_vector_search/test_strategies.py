@@ -1,5 +1,6 @@
 from __future__ import absolute_import, division
 
+from builtins import object
 import pytest
 
 from dials.algorithms.indexing.basis_vector_search import strategies

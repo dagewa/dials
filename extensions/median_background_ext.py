@@ -1,6 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import object
 class MedianBackgroundExt(object):
     """ An extension class implementing a median background algorithm. """
 

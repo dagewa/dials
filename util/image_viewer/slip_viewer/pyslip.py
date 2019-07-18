@@ -20,6 +20,7 @@ difficulty for most uses is to generate the map tiles.
 [1] http://wiki.openstreetmap.org/index.php/Slippy_Map
 """
 from __future__ import absolute_import, division, print_function
+from builtins import object
 from six.moves import range
 
 

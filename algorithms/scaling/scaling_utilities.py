@@ -4,6 +4,7 @@ Module of utility functions for scaling.
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import copy
 import logging
 from math import pi, acos

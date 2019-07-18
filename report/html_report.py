@@ -1,6 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import object
 class html_report(object):
     def __init__(self, external_dependencies="remote"):
         self._content = []

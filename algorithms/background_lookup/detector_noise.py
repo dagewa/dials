@@ -12,6 +12,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import object
 class ComputeDetectorNoise(object):
     """Calculate the detector noise. Estimate this by calculating the mean
     of the corner pixels in a series of images and return a constant."""

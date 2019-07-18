@@ -11,6 +11,7 @@
 ReflectionManagers."""
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 from dials.array_family import flex
 from dials.algorithms.refinement import DialsRefineConfigError
 

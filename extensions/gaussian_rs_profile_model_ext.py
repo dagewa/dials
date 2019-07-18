@@ -11,6 +11,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import object
 class GaussianRSProfileModelExt(object):
     """ An extension class implementing a reciprocal space gaussian profile model. """
 

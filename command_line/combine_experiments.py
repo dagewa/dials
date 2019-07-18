@@ -1,6 +1,7 @@
 #!/usr/bin/env dials.python
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import os
 
 from libtbx.phil import parse

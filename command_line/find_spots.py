@@ -13,6 +13,7 @@
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import logging
 
 logger = logging.getLogger("dials.command_line.find_spots")

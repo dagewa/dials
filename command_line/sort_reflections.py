@@ -13,6 +13,7 @@
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import libtbx.load_env
 from dials.array_family import flex
 

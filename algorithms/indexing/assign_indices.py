@@ -1,5 +1,6 @@
 from __future__ import absolute_import, division
 
+from builtins import object
 import abc
 
 from cctbx.array_family import flex

@@ -15,6 +15,7 @@ from __future__ import absolute_import, division, print_function
 # LIBTBX_PRE_DISPATCHER_INCLUDE_SH export BOOST_ADAPTBX_FPE_DEFAULT=1
 
 
+from builtins import object
 help_message = """
 
 This program is used to view the reflections with debugging purposes.

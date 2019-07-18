@@ -1,6 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import object
 class _Extension(object):
     """A base class for extension groups.
     This contains a common lookup mechanism and phil scope generator.

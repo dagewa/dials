@@ -12,6 +12,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import object
 class Algorithm(object):
     """
     A python class to wrap the centroid algorithm

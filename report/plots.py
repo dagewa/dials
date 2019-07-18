@@ -4,6 +4,7 @@ This module defines a number of general plots, which may be relevant to
 for reports of several programs.
 """
 from __future__ import absolute_import, division, print_function
+from builtins import object
 from collections import OrderedDict
 import numpy as np
 from cctbx import uctbx

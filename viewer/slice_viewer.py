@@ -9,6 +9,7 @@
 #  This code is distributed under the BSD license, a copy of which is
 #  included in the root directory of this package.
 from __future__ import absolute_import, division, print_function
+from builtins import object
 import wx
 from dials.viewer.viewer_low_level_util import (
     flex_arr_img_panel,

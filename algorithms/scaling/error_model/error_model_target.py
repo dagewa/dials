@@ -3,6 +3,7 @@ Definition of the target function for error model minimisation.
 """
 
 from __future__ import absolute_import, division, print_function
+from builtins import object
 from dials.array_family import flex
 import logging
 

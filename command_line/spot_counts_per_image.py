@@ -3,6 +3,7 @@ from __future__ import absolute_import, division, print_function
 
 # LIBTBX_PRE_DISPATCHER_INCLUDE_SH export BOOST_ADAPTBX_FPE_DEFAULT=1
 
+from builtins import object
 import sys
 
 from dials.util.options import OptionParser
