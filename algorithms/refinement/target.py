@@ -16,6 +16,7 @@ from math import pi, sqrt, floor
 from scitbx.array_family import flex
 from scitbx import sparse
 import abc
+from future.utils import with_metaclass
 
 # constants
 RAD_TO_DEG = 180.0 / pi
@@ -119,7 +120,7 @@ class TargetFactory(object):
         )
 
 
-class Target(object):
+class Target(with_metaclass(abc.ABCMeta, object)):
     """Abstract interface for a target function class
 
     A Target object will be used by a Refinery. It will refer to a Reflection
@@ -138,8 +139,6 @@ class Target(object):
     is used for a detector space & phi residual, or a reciprocal space residual.
     This should all be set by a derived class.
     """
-
-    __metaclass__ = abc.ABCMeta
     _grad_names = ["dX_dp", "dY_dp", "dphi_dp"]
     rmsd_names = ["RMSD_X", "RMSD_Y", "RMSD_Phi"]
     rmsd_units = ["mm", "mm", "rad"]

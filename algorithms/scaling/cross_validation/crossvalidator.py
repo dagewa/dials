@@ -11,14 +11,13 @@ from libtbx.table_utils import simple_table
 from dials.algorithms.scaling.observers import register_merging_stats_observers
 
 import six
+from future.utils import with_metaclass
 
 
-class CrossValidator(object):
+class CrossValidator(with_metaclass(abc.ABCMeta, object)):
 
     """Abstract class defining common methods for cross validation and methods
     that must be implemented for concrete implementations"""
-
-    __metaclass__ = abc.ABCMeta
 
     # metadata needed when constructing the results table
     results_metadata = {

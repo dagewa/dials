@@ -51,16 +51,15 @@ from dials.algorithms.scaling.reflection_selection import (
 )
 from dials.util.observer import Subject
 import six
+from future.utils import with_metaclass
 
 logger = logging.getLogger("dials")
 
 
-class ScalerBase(Subject):
+class ScalerBase(with_metaclass(abc.ABCMeta, Subject)):
     """
     Abstract base class for all scalers (single and multiple).
     """
-
-    __metaclass__ = abc.ABCMeta
 
     def __init__(self):
         """Define the properties of a scaler."""

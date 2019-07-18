@@ -11,6 +11,7 @@ from __future__ import absolute_import, division, print_function
 
 from scitbx.array_family import flex
 import abc
+from future.utils import with_metaclass
 
 
 class Parameter(object):
@@ -115,7 +116,7 @@ class Parameter(object):
         return msg
 
 
-class ModelParameterisation(object):
+class ModelParameterisation(with_metaclass(abc.ABCMeta, object)):
     """An abstract interface for the parameterisation of a model.
 
     Parameterisation of experimental objects, such as the detector, the beam,
@@ -129,8 +130,6 @@ class ModelParameterisation(object):
     describing its geometrical 'state'. One set of parameters is used to compose
     all states and calculate all derivatives of these states.
     """
-
-    __metaclass__ = abc.ABCMeta
 
     def __init__(
         self, model, initial_state, param_list, experiment_ids, is_multi_state=False

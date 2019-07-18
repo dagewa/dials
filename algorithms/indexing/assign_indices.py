@@ -6,11 +6,10 @@ from cctbx.array_family import flex
 import dials_algorithms_indexing_ext as ext
 
 from dials.algorithms.indexing import DialsIndexError
+from future.utils import with_metaclass
 
 
-class AssignIndicesStrategy(object):
-
-    __metaclass__ = abc.ABCMeta
+class AssignIndicesStrategy(with_metaclass(abc.ABCMeta, object)):
 
     def __init__(self, d_min=None):
         self._d_min = d_min

@@ -15,6 +15,7 @@ from dials.algorithms.refinement.parameterisation.model_parameters import (
 import abc
 from scitbx.array_family import flex
 from dials_refinement_helpers_ext import GaussianSmoother as GS
+from future.utils import with_metaclass
 
 # reusable PHIL string for options affecting scan-varying parameterisation
 phil_str = """
@@ -125,7 +126,7 @@ class GaussianSmoother(GS):
         return list(super(GaussianSmoother, self).positions())
 
 
-class ScanVaryingModelParameterisation(ModelParameterisation):
+class ScanVaryingModelParameterisation(with_metaclass(abc.ABCMeta, ModelParameterisation)):
     """Extending ModelParameterisation to deal with ScanVaryingParameterSets.
 
     For simplicity at this stage it is decreed that a
@@ -133,12 +134,6 @@ class ScanVaryingModelParameterisation(ModelParameterisation):
     There is no combination with normal Parameters. This could be changed later,
     but there may be no reason to do so, hence starting with this simpler
     design"""
-
-    # The initial state is here equivalent to the initial state of the
-    # time static version of the parameterisation, as it is assumed that we
-    # start with a flat model wrt rotation angle.
-
-    __metaclass__ = abc.ABCMeta
 
     def __init__(
         self,

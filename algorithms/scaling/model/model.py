@@ -29,16 +29,15 @@ from dials_scaling_ext import (
     create_sph_harm_lookup_table,
 )
 import six
+from future.utils import with_metaclass
 
 logger = logging.getLogger("dials")
 
 
-class ScalingModelBase(object):
+class ScalingModelBase(with_metaclass(abc.ABCMeta, object)):
     """Abstract base class for scaling models."""
 
     id_ = None
-
-    __metaclass__ = abc.ABCMeta
 
     def __init__(self, configdict, is_scaled=False):
         """Initialise the model with no components and a :obj:`configdict`."""

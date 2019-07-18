@@ -13,6 +13,7 @@ import logging
 from scitbx.array_family import flex
 from dials.algorithms.scaling.Ih_table import IhTable
 from dials_scaling_ext import determine_outlier_indices
+from future.utils import with_metaclass
 
 logger = logging.getLogger("dials")
 
@@ -123,7 +124,7 @@ def determine_outlier_index_arrays(Ih_table, method="standard", zmax=6.0, target
     return outlier_index_arrays
 
 
-class OutlierRejectionBase(object):
+class OutlierRejectionBase(with_metaclass(abc.ABCMeta, object)):
     """
     Base class for outlier rejection algorithms using an IhTable datastructure.
 
@@ -137,8 +138,6 @@ class OutlierRejectionBase(object):
             indices w.r.t. the order of the initial reflection tables used to
             create the Ih_table.
     """
-
-    __metaclass__ = abc.ABCMeta
 
     def __init__(self, Ih_table, zmax):
         """Set up and run the outlier rejection algorithm."""

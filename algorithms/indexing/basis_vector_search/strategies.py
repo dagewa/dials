@@ -16,14 +16,13 @@ from cctbx import crystal, uctbx, xray
 
 from dials_algorithms_indexing_ext import map_centroids_to_reciprocal_space_grid
 from dials.algorithms.indexing import DialsIndexError
+from future.utils import with_metaclass
 
 logger = logging.getLogger(__name__)
 
 
-class Strategy(object):
+class Strategy(with_metaclass(abc.ABCMeta, object)):
     """A base class for basis vector search strategies."""
-
-    __metaclass__ = abc.ABCMeta
 
     phil_scope = None
 

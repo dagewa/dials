@@ -25,9 +25,10 @@ import abc
 from dials.array_family import flex
 from scitbx import sparse
 from dials_scaling_ext import calculate_harmonic_tables_from_selections
+from future.utils import with_metaclass
 
 
-class ScaleComponentBase(object):
+class ScaleComponentBase(with_metaclass(abc.ABCMeta, object)):
     """
     Base scale component class.
 
@@ -41,8 +42,6 @@ class ScaleComponentBase(object):
     This behaviour allows data to easily be added/changed after selecting
     subsets of the data.
     """
-
-    __metaclass__ = abc.ABCMeta
 
     def __init__(self, initial_values, parameter_esds=None):
         """Set the initial parameter values, parameter esds and n_params."""

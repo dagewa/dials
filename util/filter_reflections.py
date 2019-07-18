@@ -48,6 +48,7 @@ from cctbx import crystal, miller
 from libtbx.table_utils import simple_table
 from dials.array_family import flex
 from dials.algorithms.scaling.outlier_rejection import reject_outliers
+from future.utils import with_metaclass
 
 logger = logging.getLogger("dials")
 
@@ -377,14 +378,12 @@ class FilteringReductionMethods(object):
         return reflection_table
 
 
-class FilterForExportAlgorithm(FilteringReductionMethods):
+class FilterForExportAlgorithm(with_metaclass(abc.ABCMeta, FilteringReductionMethods)):
     """Definition of the filter_for_export algorithm.
 
     An abstract class, from which reduction methods for particular intensity
     types can be implemented in a subclass.
     """
-
-    __metaclass__ = abc.ABCMeta
 
     allowed_intensities = ["prf", "scale", "sum"]  # Supported intensities
     # subclasses must define a class attribute intensities, which is a list
