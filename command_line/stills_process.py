@@ -4,6 +4,8 @@
 
 from __future__ import absolute_import, division, print_function
 
+from future import standard_library
+standard_library.install_aliases()
 import logging
 import os
 
@@ -1320,7 +1322,7 @@ class Processor(object):
 
             # Create a tar archive of the integration dictionary pickles
             if len(self.all_int_pickles) > 0 and self.params.output.integration_pickle:
-                import tarfile, StringIO, time, cPickle as pickle
+                import tarfile, io, time, pickle as pickle
 
                 tar_template_integration_pickle = self.params.output.integration_pickle.replace(
                     "%d", "%s"
@@ -1336,7 +1338,7 @@ class Processor(object):
                 for i, (fname, d) in enumerate(
                     zip(self.all_int_pickle_filenames, self.all_int_pickles)
                 ):
-                    string = StringIO.StringIO(pickle.dumps(d, protocol=2))
+                    string = io.StringIO(pickle.dumps(d, protocol=2))
                     info = tarfile.TarInfo(name=fname)
                     info.size = len(string.buf)
                     info.mtime = time.time()

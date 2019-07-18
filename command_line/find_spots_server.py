@@ -1,6 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
-import BaseHTTPServer as server_base
+from future import standard_library
+standard_library.install_aliases()
+import http.server as server_base
 import logging
 import os
 import sys

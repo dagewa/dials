@@ -1,6 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
-import httplib
+from future import standard_library
+standard_library.install_aliases()
+import http.client
 import json
 import os
 import socket as pysocket
@@ -11,7 +13,7 @@ import libtbx.phil
 
 
 def work(host, port, filename, params):
-    conn = httplib.HTTPConnection(host, port)
+    conn = http.client.HTTPConnection(host, port)
     path = filename
     for param in params:
         path += ";%s" % param
@@ -175,7 +177,7 @@ def stop(host, port, nproc):
         except pysocket.error:
             # Assuming this means the server killed itself before the reply left the send buffer.
             stopped = stopped + 1
-        except httplib.BadStatusLine:
+        except http.client.BadStatusLine:
             # Regular occurrence. Probably means the server stopped anyway.
             stopped = stopped + 1
     return stopped

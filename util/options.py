@@ -1,5 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
+from future import standard_library
+standard_library.install_aliases()
 import sys
 import os
 import itertools
@@ -11,9 +13,9 @@ from collections import defaultdict, namedtuple
 from orderedset import OrderedSet
 
 try:
-    import cPickle  # deliberately not using six.moves
+    import pickle  # deliberately not using six.moves
 
-    pickle_errors = pickle.UnpicklingError, cPickle.UnpicklingError
+    pickle_errors = pickle.UnpicklingError, pickle.UnpicklingError
 except ImportError:
     pickle_errors = (pickle.UnpicklingError,)
 

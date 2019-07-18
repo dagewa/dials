@@ -3,11 +3,13 @@
 # LIBTBX_SET_DISPATCHER_NAME dials.filter_reflections
 
 from __future__ import absolute_import, division, print_function
+from future import standard_library
+standard_library.install_aliases()
 import logging
 from operator import itemgetter
 import token
 from tokenize import generate_tokens, TokenError, untokenize
-from StringIO import StringIO
+from io import StringIO
 
 from dials.util import Sorry, log, show_mail_on_error
 from dials.util.filter_reflections import SumAndPrfIntensityReducer, SumIntensityReducer

@@ -4,6 +4,8 @@ Tests for the dials-customized version of the tqdm progress bar
 
 from __future__ import absolute_import, division, print_function
 
+from future import standard_library
+standard_library.install_aliases()
 import time as systime
 
 import pytest
