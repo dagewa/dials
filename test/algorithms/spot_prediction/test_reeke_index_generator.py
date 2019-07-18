@@ -1,10 +1,11 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import math
 import random
 
 
-class Test:
+class Test(object):
     def setup_method(self):
         from scitbx import matrix
 

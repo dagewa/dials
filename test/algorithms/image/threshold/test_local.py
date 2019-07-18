@@ -1,10 +1,11 @@
 from __future__ import absolute_import, division, print_function
+from builtins import object
 from numpy.random import poisson
 from random import randint
 from math import exp
 
 
-class Test:
+class Test(object):
     def setup_class(self):
         from scitbx.array_family import flex
 

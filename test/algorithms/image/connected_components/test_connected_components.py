@@ -1,7 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
 
-class Test2d:
+from builtins import object
+class Test2d(object):
     def setup_class(self):
         from dials.algorithms.image.connected_components import LabelImageStack2d
 
@@ -90,7 +91,7 @@ class Test2d:
                         vi += 1
 
 
-class Test3d:
+class Test3d(object):
     def setup_class(self):
         from dials.algorithms.image.connected_components import LabelImageStack3d
 

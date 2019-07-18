@@ -12,7 +12,8 @@
 from __future__ import absolute_import, division, print_function
 
 
-class reader:
+from builtins import object
+class reader(object):
     """A class to read the CBF files used in DIALS"""
 
     def __init__(self):

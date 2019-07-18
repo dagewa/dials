@@ -12,6 +12,7 @@
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 from dials.algorithms.refinement.outlier_detection import CentroidOutlier
 from dials.array_family import flex
 
@@ -54,7 +55,7 @@ class SauterPoon(CentroidOutlier):
         # cols is guaranteed to be a list of three flex arrays, containing miller
         # indices, observed pixel coordinates and calculated pixel coordinates.
         # Copy the data into matches
-        class match:
+        class match(object):
             pass
 
         matches = []

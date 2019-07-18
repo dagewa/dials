@@ -1,11 +1,12 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import os
 import math
 import pytest
 
 
-class SpotPredictor:
+class SpotPredictor(object):
     def __init__(self, dials_regression):
         from dials.algorithms.spot_prediction import IndexGenerator
         from dials.algorithms.spot_prediction import ScanStaticRayPredictor

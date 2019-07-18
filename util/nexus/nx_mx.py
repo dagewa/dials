@@ -1,5 +1,6 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 import math
 from copy import deepcopy
 
@@ -22,7 +23,7 @@ def convert_to_nexus_beam_direction(experiments):
 
     zaxis = matrix.col((0, 0, -1))
 
-    class Dummy:
+    class Dummy(object):
         pass
 
     experiments2 = []

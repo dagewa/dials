@@ -9,6 +9,7 @@
 #  included in the root directory of this package.
 from __future__ import absolute_import, division, print_function
 
+from builtins import object
 from iotbx.phil import parse
 
 # The phil scope
@@ -39,7 +40,7 @@ phil_scope = parse(
 )
 
 
-class PowderRingFilter:
+class PowderRingFilter(object):
     """
     A class to do powder ring filtering.
 
@@ -103,7 +104,7 @@ class PowderRingFilter:
         )
 
 
-class MultiPowderRingFilter:
+class MultiPowderRingFilter(object):
     """
     A class to encapsulate multiple powder ring filters
 
@@ -181,7 +182,7 @@ class MultiPowderRingFilter:
         return filters
 
 
-class IceRingFilter:
+class IceRingFilter(object):
     """
     A class to do ice ring filtering
 
