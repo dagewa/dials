@@ -3,6 +3,8 @@ Observers for the scaling algorithm.
 """
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
+from builtins import str
 import logging
 from collections import OrderedDict
 

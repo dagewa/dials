@@ -15,6 +15,8 @@ difference calculations"""
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import range
+from builtins import zip
 def test(args=[]):
     # Python and cctbx imports
     from math import pi

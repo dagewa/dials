@@ -1,4 +1,5 @@
 from __future__ import absolute_import, division, print_function
+from builtins import range
 from iotbx.reflection_file_reader import any_reflection_file
 from dials.algorithms.statistics.delta_cchalf import PerImageCChalfStatistics
 from os.path import join

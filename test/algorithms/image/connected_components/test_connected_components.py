@@ -1,6 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import zip
+from builtins import range
 class Test2d:
     def setup_class(self):
         from dials.algorithms.image.connected_components import LabelImageStack2d

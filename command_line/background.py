@@ -4,6 +4,8 @@
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
+from builtins import range
 import iotbx.phil
 from scitbx.array_family import flex
 from dials.util import Sorry

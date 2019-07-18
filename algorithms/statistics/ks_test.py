@@ -1,6 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import range
 def kstest_greater(dist, data):
     Dplus = (range(1.0, N + 1) / N - cdfvals).max()
     return Dplus, distributions.ksone.sf(Dplus, N)

@@ -36,6 +36,8 @@ cross_validation_mode=multi parameter=model parameter_values="array physical"
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import range
+from builtins import zip
 import logging
 import itertools
 import time

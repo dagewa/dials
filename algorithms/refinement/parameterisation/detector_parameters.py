@@ -10,6 +10,9 @@
 #
 
 from __future__ import absolute_import, division, print_function
+from builtins import range
+from builtins import next
+from builtins import zip
 from scitbx import matrix
 from scitbx.array_family import flex
 

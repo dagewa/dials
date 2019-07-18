@@ -9,6 +9,8 @@
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
+from builtins import range
 from dxtbx.model import Crystal
 from scitbx import matrix
 from dials.algorithms.refinement.refinement_helpers import (

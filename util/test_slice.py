@@ -1,3 +1,4 @@
+from builtins import zip
 import copy
 import glob
 import os

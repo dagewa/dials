@@ -11,6 +11,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import range
 class SpotMatcher(object):
     """Match the observed with predicted spots."""
 

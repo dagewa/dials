@@ -11,6 +11,8 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import zip
+from builtins import range
 class ValidatedMultiExpProfileModeller(object):
     """
     A class to wrap profile modeller for validation

@@ -9,6 +9,9 @@
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import str
+from builtins import next
+from builtins import zip
 from scitbx.array_family import flex
 import abc
 

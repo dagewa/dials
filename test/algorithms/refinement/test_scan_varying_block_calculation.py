@@ -4,6 +4,8 @@ https://github.com/dials/dials/issues/511"""
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
+from builtins import range
 import pytest
 from math import pi
 from dials.algorithms.refinement.reflection_manager import BlockCalculator

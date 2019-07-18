@@ -3,6 +3,7 @@ Tests for the dials.report.plots module.
 """
 from __future__ import absolute_import, division, print_function
 
+from builtins import range
 import itertools
 import random
 

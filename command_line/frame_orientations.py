@@ -12,6 +12,9 @@ Usage: dials.frame_orientations refined.expt
 """
 
 from __future__ import division, print_function, absolute_import
+from builtins import range
+from builtins import zip
+from builtins import str
 import sys
 from dials.util import Sorry
 from dials.util.options import flatten_reflections, flatten_experiments, OptionParser

@@ -10,6 +10,9 @@
 #  included in the root directory of this package.
 #
 from __future__ import absolute_import, division, print_function
+from builtins import zip
+from builtins import range
+from builtins import str
 import collections
 import logging
 from math import sqrt

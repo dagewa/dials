@@ -2,6 +2,9 @@
 Tests for the error model.
 """
 from __future__ import absolute_import, division, print_function
+from builtins import zip
+from builtins import range
+from builtins import next
 from math import sqrt
 import pytest
 from libtbx.test_utils import approx_equal

@@ -1,6 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import zip
 def test_run(dials_data):
     filename = dials_data("centroid_test_data").join("experiments.json").strpath
 

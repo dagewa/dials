@@ -6,6 +6,8 @@ parameters using generated reflection positions from ideal geometry.
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import zip
+from builtins import range
 def test():
     # Python and cctbx imports
     from math import pi

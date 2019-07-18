@@ -13,6 +13,9 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import range
+from builtins import str
+from builtins import map
 class H5PYEncoder(object):
     """Encoder base class."""
 

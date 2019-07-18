@@ -2,6 +2,7 @@
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
 import os
 
 from dxtbx.model.experiment_list import ExperimentListFactory

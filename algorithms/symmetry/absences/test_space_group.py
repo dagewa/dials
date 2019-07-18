@@ -1,4 +1,5 @@
 """Test the dials.space_group command line script."""
+from builtins import str
 import os
 import procrunner
 from dxtbx.serialize import load

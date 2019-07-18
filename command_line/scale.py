@@ -2,6 +2,9 @@
 # coding: utf-8
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
+from builtins import range
+from builtins import map
 help_message = """
 This program performs scaling on integrated datasets, which attempts to improve
 the internal consistency of the reflection intensities by correcting for

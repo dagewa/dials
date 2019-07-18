@@ -5,6 +5,7 @@ of a TargetScaler.
 """
 from __future__ import absolute_import, division, print_function
 
+from builtins import str
 from math import log
 import pytest
 from libtbx import phil

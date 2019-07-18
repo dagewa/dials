@@ -6,6 +6,9 @@ methods to define how these are composed into one model.
 """
 from __future__ import absolute_import, division, print_function
 
+from builtins import range
+from builtins import zip
+from builtins import str
 import abc
 import logging
 from collections import OrderedDict

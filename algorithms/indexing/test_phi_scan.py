@@ -1,5 +1,6 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
 import os
 import pytest
 from cctbx import uctbx

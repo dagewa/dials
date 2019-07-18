@@ -11,6 +11,8 @@
 #  included in the root directory of this package.
 
 from __future__ import absolute_import, division, print_function
+from builtins import range
+from builtins import zip
 from math import floor
 from scitbx.array_family import flex
 from dials_refinement_helpers_ext import maha_dist_sq as maha_dist_sq_cpp

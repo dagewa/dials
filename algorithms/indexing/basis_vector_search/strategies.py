@@ -3,6 +3,9 @@
 from __future__ import absolute_import, division
 from __future__ import print_function
 
+from builtins import zip
+from builtins import range
+from builtins import str
 import abc
 import math
 import logging

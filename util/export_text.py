@@ -1,6 +1,7 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import zip
 def export_text(integrated_data):
     """Export contents of a dials reflection table as text."""
 

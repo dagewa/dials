@@ -1,5 +1,6 @@
 from __future__ import absolute_import, division, print_function
 
+from builtins import str
 from scitbx.array_family import flex
 from cctbx import crystal, sgtbx, uctbx
 import pytest

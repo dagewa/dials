@@ -32,6 +32,9 @@ Examples::
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
+from builtins import str
+from builtins import range
 import logging
 import os.path
 import sys

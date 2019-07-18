@@ -1,6 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import range
+from builtins import str
 def spot_counts_per_image_plot(reflections, **kwargs):
     if len(reflections) == 0:
         return "\n"

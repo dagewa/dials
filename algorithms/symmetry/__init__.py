@@ -4,6 +4,8 @@ This module provides a base class for symmetry determination algorithms.
 """
 from __future__ import division, absolute_import, print_function
 
+from builtins import range
+from builtins import str
 import logging
 
 logger = logging.getLogger(__name__)

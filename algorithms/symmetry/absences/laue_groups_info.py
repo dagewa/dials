@@ -1,5 +1,6 @@
 """Definitions of screw axes and space groups for Laue classes."""
 from __future__ import absolute_import, division, print_function
+from builtins import zip
 from dials.algorithms.symmetry.absences.screw_axes import (
     ScrewAxis21a,
     ScrewAxis21b,

@@ -12,6 +12,7 @@
 
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
 import datetime
 import six.moves.cPickle as pickle
 import logging

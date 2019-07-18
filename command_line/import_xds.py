@@ -12,6 +12,10 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import zip
+from builtins import range
+from builtins import str
+from builtins import map
 class SpotXDSImporter(object):
     """ Class to import a spot.xds file to a reflection table. """
 

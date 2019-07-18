@@ -12,6 +12,7 @@ from __future__ import absolute_import, division, print_function
 # A class for producing efficient looping limits for reflection
 # prediction based on the Reeke algorithm (see Mosflm).
 
+from builtins import map
 from scitbx import matrix
 import scitbx.math
 import math

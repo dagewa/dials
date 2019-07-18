@@ -6,6 +6,7 @@ restraints
 # Python and cctbx imports
 from __future__ import absolute_import, division, print_function
 
+from builtins import zip
 import math
 import os
 

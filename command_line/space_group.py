@@ -7,6 +7,8 @@ Currently only tests axial absences to determine which of the 65 MX space
 groups is most likely.
 """
 from __future__ import absolute_import, division, print_function
+from builtins import zip
+from builtins import str
 import logging
 import sys
 from dials.util import log, show_mail_on_error, Sorry

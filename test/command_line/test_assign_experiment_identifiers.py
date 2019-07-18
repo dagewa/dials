@@ -3,6 +3,7 @@ Test for dials.assign_experiment_identifiers
 """
 from __future__ import absolute_import, division, print_function
 
+from builtins import str
 import os
 
 import procrunner

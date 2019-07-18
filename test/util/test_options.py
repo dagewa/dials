@@ -3,6 +3,7 @@ Tests for the functions in dials.util.options
 """
 from __future__ import absolute_import, division, print_function
 
+from builtins import str
 from mock import Mock
 from dials.util.options import flatten_reflections, flatten_experiments, OptionParser
 from dials.array_family import flex

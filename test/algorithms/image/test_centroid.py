@@ -1,6 +1,8 @@
 from __future__ import absolute_import, division, print_function
 
 
+from builtins import zip
+from builtins import range
 class Test_Centroid(object):
     EPS = 1e-7
 

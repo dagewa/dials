@@ -2,6 +2,7 @@
 Optimise the combination of profile and summation intensity values.
 """
 from __future__ import absolute_import, division, print_function
+from builtins import str
 import logging
 import boost.python
 from libtbx.table_utils import simple_table

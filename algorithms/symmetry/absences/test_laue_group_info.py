@@ -1,4 +1,5 @@
 """Test components of the dials.space_group program."""
+from builtins import zip
 import pytest
 from dials.array_family import flex
 from dials.algorithms.symmetry.absences.laue_groups_info import (
