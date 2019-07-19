@@ -7,7 +7,7 @@ import sys
 import gc
 import libtbx
 from libtbx import phil
-from cStringIO import StringIO
+from six.moves import cStringIO as StringIO
 from dials.util import log, show_mail_on_error, Sorry
 from dials.array_family import flex
 from dials.util.options import OptionParser, flatten_reflections, flatten_experiments
