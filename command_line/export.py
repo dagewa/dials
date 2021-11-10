@@ -44,8 +44,8 @@ input is an models.expt file.
 XDS format exports a models.expt file as XDS.INP and XPARM.XDS files. If a
 reflection file is given it will be exported as a SPOT.XDS file.
 
-PETS format exports intensity data and diffraction data in the CIF format
-used by PETS 2.0. This is primarily intended to produce files suitable for
+PETS2 format exports intensity data and diffraction data in the CIF format
+used by PETS2. This is primarily intended to produce files suitable for
 dynamic diffraction refinement using Jana2020, which requires this format.
 
 Examples::
@@ -603,13 +603,8 @@ def run(args=None):
     try:
         exporter(params, experiments, reflections)
     except Exception as e:
-<<<<<<< HEAD
         raise
         sys.exit(e)
-=======
-        logger.error(f"Error: {e}")
-        sys.exit(1)
->>>>>>> Check unique space group on MTZ export (#1915)
 
 
 if __name__ == "__main__":
