@@ -600,6 +600,7 @@ def run(args=None):
     try:
         exporter(params, experiments, reflections)
     except Exception as e:
+        raise
         sys.exit(e)
 
 
