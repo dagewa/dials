@@ -600,8 +600,13 @@ def run(args=None):
     try:
         exporter(params, experiments, reflections)
     except Exception as e:
+<<<<<<< HEAD
         raise
         sys.exit(e)
+=======
+        logger.error(f"Error: {e}")
+        sys.exit(1)
+>>>>>>> Check unique space group on MTZ export (#1915)
 
 
 if __name__ == "__main__":
